@@ -5,14 +5,17 @@ Usage
 Пример настроек для .env лежит в .env.copy
 
 Развернуть БД, засеять миграции и сиды можно из папки server с помощью команды: 
->```
-	 npm run db-up
-    ```
+```
+npm run db-up
 
 Установить зависимости и запустить бэк из папки server с помощью команд: 
-><pre> npm install </pre> 
-><pre> npm run dev </pre>
+```
+npm install
+```
+npm run dev
 
 Установить зависимости и запустить фронт из папки client с помощью команд:
-><pre> npm install </pre> 
-><pre> npm start</pre>
+``` 
+npm install
+```
+npm start
