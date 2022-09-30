@@ -33,7 +33,7 @@ const ListSlice = createSlice({
         },
         filterEquals: (state, action) => {
             const {name, meaning} = action.payload
-            const newFilter = [...state.allTable].filter((el)=> el[name] === +meaning)
+            const newFilter = [...state.allTable].filter((el)=>  String(el[name]).toLowerCase() === meaning.toLowerCase())
             state.filterTable = newFilter
             state.totalCount = newFilter.length
         },
